@@ -6,8 +6,8 @@ pipeline {
     }
     stages {
         stage("Run app on Docker"){
-            agent{
-                docker{
+            agent {
+                docker {
                     image 'node:12-alpine'
                 }
             }
